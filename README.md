@@ -1,9 +1,13 @@
 <img src="www/YuHtzee-logo.png" align="right" width=120 height=139 alt="" />
 
 # YuHtzee - Yahtzee Score Keeper app
-If you suddenly had an immense urge to play Yahtzee, but you realized you do not have anymore score cards, then YuHtzee is just the app for you.\
-YuHtzee replaces all the pens and paper score cards with an easy-to-use Scoring dashboard. YuHtzee can replace paper scoring cards for 1-10 people.\
+If you suddenly had an immense urge to play Yahtzee, but you realized you do not have scoring cards anymore, then YuHtzee is just the app for you.\
+YuHtzee replaces all the pens and paper score cards with an easy-to-use Scoring dashboard.\
+YuHtzee can replace paper scoring cards for 1-10 people.\
 YuHtzee does not perform any calculations by itself, rather it helps you to organize the Yahtzee scores after each game.\
+For easy of use, each player has their own tab, with an animal nickname and number.\
+The player's name can also be provided in the corresponding field.\
+To help you out more, Upper and Lower sections of a classical Yahtzee scoring card have been seperated into two windows.
 
 <img src="user_interface-upper.png" align="center" width=100% height=400 alt="" />
 <img src="user_interface-lower.png" align="center" width=100% height=400 alt="" />
