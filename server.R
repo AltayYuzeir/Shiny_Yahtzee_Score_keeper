@@ -32,27 +32,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field1", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field1", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field1", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field1", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field1", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field1", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -791,7 +791,7 @@ shinyServer(function(input, output, session) {
       
     )
   })
-  
+ 
   output$player2page <- renderUI({
     tabsetPanel(
       #### Player 2 upper ----
@@ -809,27 +809,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field2", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field2", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field2", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field2", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field2", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field2", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -1586,27 +1586,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field3", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field3", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field3", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field3", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field3", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field3", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -2362,27 +2362,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field4", label = "Game 1", width = "100%", value = "====")
+                   textInput("field4_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field4", label = "Game 2", width = "100%", value = "====")
+                   textInput("field4_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field4", label = "Game 3", width = "100%", value = "====")
+                   textInput("field4_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field4", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field4_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field4", label = "Game 5", width = "100%", value = "====")
+                   textInput("field4_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field4", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field4_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -3138,27 +3138,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field5", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field5", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field5", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field5", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field5", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field5", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -3915,27 +3915,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field6", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field6", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field6", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field6", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field6", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field6", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -4691,27 +4691,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field7", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field7", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field7", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field7", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field7", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field7", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -5467,27 +5467,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field8", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field8", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field8", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field8", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field8", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field8", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -6243,27 +6243,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field9", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field9", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field9", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field9", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field9", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field9", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
@@ -7019,27 +7019,27 @@ shinyServer(function(input, output, session) {
                  ),
                  column(
                    width = 1,
-                   textInput("field10", label = "Game 1", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 1", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field10", label = "Game 2", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 2", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field10", label = "Game 3", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 3", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field10", label = "Game 4",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 4",  width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field10", label = "Game 5", width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 5", width = "100%", value = "====")
                  ),
                  column(
                    width = 1,
-                   textInput("field10", label = "Game 6",  width = "100%", value = "====")
+                   textInput("field_rules", label = "Game 6",  width = "100%", value = "====")
                  )
                ),
                fluidRow(
