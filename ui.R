@@ -30,7 +30,7 @@ shinyUI(dashboardPage(
                                  font-size: 16px;
                                  }")
             ))
-    ),
+  ),
   sidebar = dashboardSidebar(
     
     sidebarMenu(
@@ -39,14 +39,14 @@ shinyUI(dashboardPage(
           style="display: block; margin-left: auto; margin-right: auto;"),
       hr(style = "border-top: 1px solid #ffffff;"),
       menuItem(
-        text = "Player 1 - Horse",
+        text = "Player 1 - Dog",
         tabName = "player1",
-        icon = icon("horse")
+        icon = icon("dog")
       ),
       menuItem(
-        text = "Player 2 - Dog",
+        text = "Player 2 - Cat",
         tabName = "player2",
-        icon = icon("dog")
+        icon = icon("cat")
       ),
       menuItem(
         text = "Player 3 - Fish",
@@ -59,14 +59,14 @@ shinyUI(dashboardPage(
         icon = icon("otter")
       ),
       menuItem(
-        text = "Player 5 - Cat",
+        text = "Player 5 - Dove",
         tabName = "player5",
-        icon = icon("cat")
+        icon = icon("dove")
       ),
       menuItem(
-        text = "Player 6 - Dove",
+        text = "Player 6 - Horse",
         tabName = "player6",
-        icon = icon("dove")
+        icon = icon("horse")
       ),
       menuItem(
         text = "Player 7 - Dragon",
@@ -88,8 +88,8 @@ shinyUI(dashboardPage(
         tabName = "player10",
         icon = icon("cow")
       )
-     ),
-     hr(style = "border-top: 1px solid #ffffff;"),
+    ),
+    hr(style = "border-top: 1px solid #ffffff;"),
     div(style="text-align:center; color: #00c0ef", tags$b("Copyright"),icon("copyright"),
         tags$b("2022-2022"),br(), tags$b("Altay Yuzeir"))
     
