@@ -515,7 +515,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll1", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll1", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -1323,7 +1323,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll2", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll2", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -2131,7 +2131,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll3", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll3", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -2940,7 +2940,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll4", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll4", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -3749,7 +3749,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll5", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll5", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -4557,7 +4557,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll6", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll6", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -5366,7 +5366,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll7", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll7", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -6174,7 +6174,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll8", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll8", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -6982,7 +6982,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll9", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll9", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
@@ -7790,7 +7790,7 @@ ui = dashboardPage(
                          fluidRow(
                            column(
                              width = 3,
-                             actionButton("clearAll10", "Clear ALL player Scores", icon = icon("xmark"),
+                             actionButton("clearAll10", "Clear ALL Player Scores", icon = icon("xmark"),
                                           style = "background:#999966;color:white;")
                            ),
                            column(
