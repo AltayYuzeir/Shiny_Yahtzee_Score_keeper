@@ -21,9 +21,11 @@ Option 1: Hosted locally
 Option 2: Hosted online, e.g. shinyapps.io (Recommended)
 1. Download all files and create an account in shinyapps.io and follow their instructions furter.
 2. YuHtzee is great to be hosted online, as it has integrated persistent data storage solution for you to note down results. Also, due to the relatively large number of UI elements, hosting on a server should decrease the chance of crashes due to limited computational resources.
-3. We are employing a special persistent data storage solution inside Shiny, so even if your app closes itself, upon re-loading your score results will not be lost. Useful buttons to delete Player scores, either one by one, or All Player scores at once, are included.
+3. We are employing a special persistent data storage solution inside Shiny, so even if your app closes itself, upon re-loading your score results will not be lost. Due to the large number of input elements, registering and updating values from Score fields in the persistent data storage takes few minutes.
+4. Useful buttons to delete Player scores, either one by one, or All Player scores at once, are included.
 
 Before you do the setup yourself, you can have a look at the full YuHtzee app here: https://altayyuzeir.shinyapps.io/yuhtzee/
 
 # Acknowledgements and my thanks
-To Dr. Obianom, the creator of [shinyStorePlus](https://github.com/oobianom/shinyStorePlus) for the incredibly useful tool for persistent data storage inside Shiny.
+1. To Dr. Obianom, the creator of [shinyStorePlus](https://github.com/oobianom/shinyStorePlus) for the incredibly useful tool for persistent data storage inside Shiny.
+2. To [Dean Attali](https://deanattali.com/) for the package _**shinyjs**_ which we have used here. But Mr. Attali is doing so much more and creating amazing tools for us to use in Shiny. Feel free to check him out.
