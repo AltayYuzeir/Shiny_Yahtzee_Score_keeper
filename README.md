@@ -21,6 +21,9 @@ Option 1: Hosted locally
 Option 2: Hosted online, e.g. shinyapps.io (Recommended)
 1. Download all files and create an account in shinyapps.io and follow their instructions furter.
 2. YuHtzee is great to be hosted online, as it needs no persistent data storage to function, as you just note down results. Also, due to the relatively large number of UI elements, hosting on a server should decrease the chance of crashes due to limited computational resources.
-3. It is recommended to increase _Application -> Instance Idle Timeout_ at the shinyapps.io admin dashboard to something like 60 min, so your application does not close itself too soon. **_If the application disconnects, all entered results will be wiped out and lost !!!_**
+3. We are emplyong a special persistent data storage solution inside Shiny, so even if your app closes itself, your store results will not be lost.
 
 Before you do the setup yourself, you can have a look at the full YuHtzee app here: https://altayyuzeir.shinyapps.io/yuhtzee/
+
+# Acknowledgements and my thanks
+To Dr. Obianom, the creator of [shinyStorePlus](https://github.com/oobianom/shinyStorePlus) for the incredibly useful tool for persistent data storage inside Shiny.
