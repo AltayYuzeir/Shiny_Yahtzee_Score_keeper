@@ -97,6 +97,28 @@ ui = dashboardPage(
   ),
   
   body = dashboardBody(
+    tags$head(
+      tags$style(
+        type = "text/css",
+        "
+             #loadmessage {
+               position: fixed;
+               top: 0px;
+               left: 0px;
+               width: 100%;
+               padding: 5px 0px 5px 0px;
+               text-align: center;
+               font-weight: bold;
+               font-size: 100%;
+               color: #000000;
+               background-color: #cccc00;
+               z-index: 105;
+             }
+          "
+      )
+    ),
+    # conditionalPanel(condition = "$('html').hasClass('shiny-busy')",
+    #                  tags$div("Loading...", id = "loadmessage")),
     useShinyjs(),
     initStore(),
     tabItems(
@@ -472,6 +494,38 @@ ui = dashboardPage(
                              textInput("field1_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 1 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear1", "Clear Player 1 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear1confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear1cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll1", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll1confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll1cancel")
+                           )
                          )
                 ),
                 #### Player 1 lower ----
@@ -1248,6 +1302,38 @@ ui = dashboardPage(
                              textInput("field2_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 2 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear2", "Clear Player 2 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear2confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear2cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll2", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll2confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll2cancel")
+                           )
                          )
                 ),
                 #### Player 2 lower ----
@@ -2024,6 +2110,38 @@ ui = dashboardPage(
                              textInput("field3_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 3 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear3", "Clear Player 3 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear3confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear3cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll3", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll3confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll3cancel")
+                           )
                          )
                 ),
                 #### Player 3 lower ----
@@ -2801,6 +2919,38 @@ ui = dashboardPage(
                              textInput("field4_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 4 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear4", "Clear Player 4 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear4confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear4cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll4", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll4confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll4cancel")
+                           )
                          )
                 ),
                 #### Player 4 lower ----
@@ -3578,6 +3728,38 @@ ui = dashboardPage(
                              textInput("field5_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 5 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear5", "Clear Player 5 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear5confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear5cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll5", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll5confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll5cancel")
+                           )
                          )
                 ),
                 #### Player 5 lower ----
@@ -4354,6 +4536,38 @@ ui = dashboardPage(
                              textInput("field6_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 6 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear6", "Clear Player 6 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear6confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear6cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll6", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll6confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll6cancel")
+                           )
                          )
                 ),
                 #### Player 6 lower ----
@@ -5131,6 +5345,38 @@ ui = dashboardPage(
                              textInput("field7_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 7 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear7", "Clear Player 7 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear7confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear7cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll7", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll7confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll7cancel")
+                           )
                          )
                 ),
                 #### Player 7 lower ----
@@ -5907,6 +6153,38 @@ ui = dashboardPage(
                              textInput("field8_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 8 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear8", "Clear Player 8 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear8confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear8cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll8", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll8confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll8cancel")
+                           )
                          )
                 ),
                 #### Player 8 lower ----
@@ -6683,6 +6961,38 @@ ui = dashboardPage(
                              textInput("field9_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 9 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear9", "Clear Player 9 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear9confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear9cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll9", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll9confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll9cancel")
+                           )
                          )
                 ),
                 #### Player 9 lower ----
@@ -7459,6 +7769,38 @@ ui = dashboardPage(
                              textInput("field10_54", label = NULL, width = "100%")
                            )
                            
+                         ),
+                         #### Player 10 Buttons ----
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clear10", "Clear Player 10 Scores", icon = icon("xmark"),
+                                          style = "background:#cc6699;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear10confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clear10cancel")
+                           )
+                         ),
+                         br(),
+                         fluidRow(
+                           column(
+                             width = 3,
+                             actionButton("clearAll10", "Clear ALL player Scores", icon = icon("xmark"),
+                                          style = "background:#999966;color:white;")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll10confirm")
+                           ),
+                           column(
+                             width = 3,
+                             uiOutput("clearAll10cancel")
+                           )
                          )
                 ),
                 #### Player 10 lower ----
@@ -7878,6 +8220,718 @@ server = function(input, output, session){
   output$yuhtzee = renderText({
     paste0("YuHtzee - Yahtzee Score keeper app")
   })
+  
+  #### Player 1 buttons server -----
+  
+  observeEvent(input$clear1,{
+    output$clear1confirm = renderUI({
+      actionButton("clear1confirmButton", "Confirm Clear Player 1", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear1cancel = renderUI({
+      actionButton("clear1cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear1confirmButton")
+    show(id = "clear1cancelButton")
+  })
+  
+  observeEvent(input$clear1cancelButton,{
+    
+    hide(id = "clear1confirmButton")
+    hide(id = "clear1cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear1confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","1","_",j),
+                      value = "")
+    }
+    hide(id = "clear1confirmButton")
+    hide(id = "clear1cancelButton")
+    
+  })
+  
+  #### Player 2 buttons server -----
+  
+  observeEvent(input$clear2,{
+    output$clear2confirm = renderUI({
+      actionButton("clear2confirmButton", "Confirm Clear Player 2", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear2cancel = renderUI({
+      actionButton("clear2cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear2confirmButton")
+    show(id = "clear2cancelButton")
+  })
+  
+  observeEvent(input$clear2cancelButton,{
+    
+    hide(id = "clear2confirmButton")
+    hide(id = "clear2cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear2confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","2","_",j),
+                      value = "")
+    }
+    hide(id = "clear2confirmButton")
+    hide(id = "clear2cancelButton")
+    
+  })
+  
+  #### Player 3 buttons server -----
+  
+  observeEvent(input$clear3,{
+    output$clear3confirm = renderUI({
+      actionButton("clear3confirmButton", "Confirm Clear Player 3", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear3cancel = renderUI({
+      actionButton("clear3cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear3confirmButton")
+    show(id = "clear3cancelButton")
+  })
+  
+  observeEvent(input$clear3cancelButton,{
+    
+    hide(id = "clear3confirmButton")
+    hide(id = "clear3cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear3confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","3","_",j),
+                      value = "")
+    }
+    hide(id = "clear3confirmButton")
+    hide(id = "clear3cancelButton")
+    
+  })
+  
+  #### Player 4 buttons server -----
+  
+  observeEvent(input$clear4,{
+    output$clear4confirm = renderUI({
+      actionButton("clear4confirmButton", "Confirm Clear Player 4", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear4cancel = renderUI({
+      actionButton("clear4cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear4confirmButton")
+    show(id = "clear4cancelButton")
+  })
+  
+  observeEvent(input$clear4cancelButton,{
+    
+    hide(id = "clear4confirmButton")
+    hide(id = "clear4cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear4confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","4","_",j),
+                      value = "")
+    }
+    hide(id = "clear4confirmButton")
+    hide(id = "clear4cancelButton")
+    
+  })
+  
+  #### Player 5 buttons server -----
+  
+  observeEvent(input$clear5,{
+    output$clear5confirm = renderUI({
+      actionButton("clear5confirmButton", "Confirm Clear Player 5", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear5cancel = renderUI({
+      actionButton("clear5cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear5confirmButton")
+    show(id = "clear5cancelButton")
+  })
+  
+  observeEvent(input$clear5cancelButton,{
+    
+    hide(id = "clear5confirmButton")
+    hide(id = "clear5cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear5confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","5","_",j),
+                      value = "")
+    }
+    hide(id = "clear5confirmButton")
+    hide(id = "clear5cancelButton")
+    
+  })
+  
+  #### Player 6 buttons server -----
+  
+  observeEvent(input$clear6,{
+    output$clear6confirm = renderUI({
+      actionButton("clear6confirmButton", "Confirm Clear Player 6", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear6cancel = renderUI({
+      actionButton("clear6cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear6confirmButton")
+    show(id = "clear6cancelButton")
+  })
+  
+  observeEvent(input$clear6cancelButton,{
+    
+    hide(id = "clear6confirmButton")
+    hide(id = "clear6cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear6confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","6","_",j),
+                      value = "")
+    }
+    hide(id = "clear6confirmButton")
+    hide(id = "clear6cancelButton")
+    
+  })
+  
+  #### Player 7 buttons server -----
+  
+  observeEvent(input$clear7,{
+    output$clear7confirm = renderUI({
+      actionButton("clear7confirmButton", "Confirm Clear Player 7", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear7cancel = renderUI({
+      actionButton("clear7cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear7confirmButton")
+    show(id = "clear7cancelButton")
+  })
+  
+  observeEvent(input$clear7cancelButton,{
+    
+    hide(id = "clear7confirmButton")
+    hide(id = "clear7cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear7confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","7","_",j),
+                      value = "")
+    }
+    
+    hide(id = "clear7confirmButton")
+    hide(id = "clear7cancelButton")
+    
+  })
+  
+  #### Player 8 buttons server -----
+  
+  observeEvent(input$clear8,{
+    output$clear8confirm = renderUI({
+      actionButton("clear8confirmButton", "Confirm Clear Player 8", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear8cancel = renderUI({
+      actionButton("clear8cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear8confirmButton")
+    show(id = "clear8cancelButton")
+  })
+  
+  observeEvent(input$clear8cancelButton,{
+    
+    hide(id = "clear8confirmButton")
+    hide(id = "clear8cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear8confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","8","_",j),
+                      value = "")
+    }
+    hide(id = "clear8confirmButton")
+    hide(id = "clear8cancelButton")
+    
+  })
+  
+  #### Player 9 buttons server -----
+  
+  observeEvent(input$clear9,{
+    output$clear9confirm = renderUI({
+      actionButton("clear9confirmButton", "Confirm Clear Player 9", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear9cancel = renderUI({
+      actionButton("clear9cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear9confirmButton")
+    show(id = "clear9cancelButton")
+  })
+  
+  observeEvent(input$clear9cancelButton,{
+    
+    hide(id = "clear9confirmButton")
+    hide(id = "clear9cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear9confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","9","_",j),
+                      value = "")
+    }
+    hide(id = "clear9confirmButton")
+    hide(id = "clear9cancelButton")
+  })
+  
+  #### Player 10 buttons server -----
+  
+  observeEvent(input$clear10,{
+    output$clear10confirm = renderUI({
+      actionButton("clear10confirmButton", "Confirm Clear Player 10", icon = icon("trash-can"),
+                   style = "background:red;color:white;")
+    })
+    
+    output$clear10cancel = renderUI({
+      actionButton("clear10cancelButton", "Cancel Clear", icon = icon("ban"),
+                   style = "background:#ffa64d;color:white;")
+    })
+    
+    show(id = "clear10confirmButton")
+    show(id = "clear10cancelButton")
+  })
+  
+  observeEvent(input$clear10cancelButton,{
+    
+    hide(id = "clear10confirmButton")
+    hide(id = "clear10cancelButton")
+    
+  })
+  
+  
+  observeEvent(input$clear10confirmButton,{
+    
+    for (j in 1:120){
+      updateTextInput(inputId = paste0("field","10","_",j),
+                      value = "")
+    }
+    hide(id = "clear10confirmButton")
+    hide(id = "clear10cancelButton")
+    
+  })
+  
+  
+  #### Player ALL1 buttons server -----
+  
+  observeEvent(input$clearAll1,{
+    output$clearAll1confirm = renderUI({
+      actionButton("clearAll1confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll1cancel = renderUI({
+      actionButton("clearAll1cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll1confirmButton")
+    show(id = "clearAll1cancelButton")
+  })
+  
+  observeEvent(input$clearAll1cancelButton,{
+    
+    hide(id = "clearAll1confirmButton")
+    hide(id = "clearAll1cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll1confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll1confirmButton")
+    hide(id = "clearAll1cancelButton")
+  })
+  
+  #### Player ALL2 buttons server -----
+  
+  observeEvent(input$clearAll2,{
+    output$clearAll2confirm = renderUI({
+      actionButton("clearAll2confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll2cancel = renderUI({
+      actionButton("clearAll2cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll2confirmButton")
+    show(id = "clearAll2cancelButton")
+  })
+  
+  observeEvent(input$clearAll2cancelButton,{
+    
+    hide(id = "clearAll2confirmButton")
+    hide(id = "clearAll2cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll2confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll2confirmButton")
+    hide(id = "clearAll2cancelButton")
+  })
+  
+  #### Player ALL3 buttons server -----
+  
+  observeEvent(input$clearAll3,{
+    output$clearAll3confirm = renderUI({
+      actionButton("clearAll3confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll3cancel = renderUI({
+      actionButton("clearAll3cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll3confirmButton")
+    show(id = "clearAll3cancelButton")
+  })
+  
+  observeEvent(input$clearAll3cancelButton,{
+    
+    hide(id = "clearAll3confirmButton")
+    hide(id = "clearAll3cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll3confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll3confirmButton")
+    hide(id = "clearAll3cancelButton")
+  })
+  
+  #### Player ALL4 buttons server -----
+  
+  observeEvent(input$clearAll4,{
+    output$clearAll4confirm = renderUI({
+      actionButton("clearAll4confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll4cancel = renderUI({
+      actionButton("clearAll4cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll4confirmButton")
+    show(id = "clearAll4cancelButton")
+  })
+  
+  observeEvent(input$clearAll4cancelButton,{
+    
+    hide(id = "clearAll4confirmButton")
+    hide(id = "clearAll4cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll4confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll4confirmButton")
+    hide(id = "clearAll4cancelButton")
+  })
+  
+  #### Player ALL5 buttons server -----
+  
+  observeEvent(input$clearAll5,{
+    output$clearAll5confirm = renderUI({
+      actionButton("clearAll5confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll5cancel = renderUI({
+      actionButton("clearAll5cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll5confirmButton")
+    show(id = "clearAll5cancelButton")
+  })
+  
+  observeEvent(input$clearAll5cancelButton,{
+    
+    hide(id = "clearAll5confirmButton")
+    hide(id = "clearAll5cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll5confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll5confirmButton")
+    hide(id = "clearAll5cancelButton")
+  })
+  
+  #### Player ALL6 buttons server -----
+  
+  observeEvent(input$clearAll6,{
+    output$clearAll6confirm = renderUI({
+      actionButton("clearAll6confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll6cancel = renderUI({
+      actionButton("clearAll6cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll6confirmButton")
+    show(id = "clearAll6cancelButton")
+  })
+  
+  observeEvent(input$clearAll6cancelButton,{
+    
+    hide(id = "clearAll6confirmButton")
+    hide(id = "clearAll6cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll6confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll6confirmButton")
+    hide(id = "clearAll6cancelButton")
+  })
+  
+  #### Player ALL7 buttons server -----
+  
+  observeEvent(input$clearAll7,{
+    output$clearAll7confirm = renderUI({
+      actionButton("clearAll7confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll7cancel = renderUI({
+      actionButton("clearAll7cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll7confirmButton")
+    show(id = "clearAll7cancelButton")
+  })
+  
+  observeEvent(input$clearAll7cancelButton,{
+    
+    hide(id = "clearAll7confirmButton")
+    hide(id = "clearAll7cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll7confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll7confirmButton")
+    hide(id = "clearAll7cancelButton")
+  })
+  
+  #### Player ALL8 buttons server -----
+  
+  observeEvent(input$clearAll8,{
+    output$clearAll8confirm = renderUI({
+      actionButton("clearAll8confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll8cancel = renderUI({
+      actionButton("clearAll8cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll8confirmButton")
+    show(id = "clearAll8cancelButton")
+  })
+  
+  observeEvent(input$clearAll8cancelButton,{
+    
+    hide(id = "clearAll8confirmButton")
+    hide(id = "clearAll8cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll8confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll8confirmButton")
+    hide(id = "clearAll8cancelButton")
+  })
+  
+  #### Player ALL9 buttons server -----
+  
+  observeEvent(input$clearAll9,{
+    output$clearAll9confirm = renderUI({
+      actionButton("clearAll9confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll9cancel = renderUI({
+      actionButton("clearAll9cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll9confirmButton")
+    show(id = "clearAll9cancelButton")
+  })
+  
+  observeEvent(input$clearAll9cancelButton,{
+    
+    hide(id = "clearAll9confirmButton")
+    hide(id = "clearAll9cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll9confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll9confirmButton")
+    hide(id = "clearAll9cancelButton")
+  })
+  
+  #### Player ALL10 buttons server -----
+  
+  observeEvent(input$clearAll10,{
+    output$clearAll10confirm = renderUI({
+      actionButton("clearAll10confirmButton", "Confirm Clear ALL Players", icon = icon("trash-can"),
+                   style = "background:black;color:white;")
+    })
+    
+    output$clearAll10cancel = renderUI({
+      actionButton("clearAll10cancelButton", "Cancel Clear ALL", icon = icon("ban"),
+                   style = "background:#666699;color:white;")
+    })
+    
+    show(id = "clearAll10confirmButton")
+    show(id = "clearAll10cancelButton")
+  })
+  
+  observeEvent(input$clearAll10cancelButton,{
+    
+    hide(id = "clearAll10confirmButton")
+    hide(id = "clearAll10cancelButton")
+    
+  })
+  
+  observeEvent(input$clearAll10confirmButton,{
+    for (i in 1:10){
+      for (j in 1:120){
+        updateTextInput(inputId = paste0("field",i,"_",j),
+                        value = "")
+      }
+    }
+    hide(id = "clearAll10confirmButton")
+    hide(id = "clearAll10cancelButton")
+  })
+  
   
   #### End ----
   setupStorage(
